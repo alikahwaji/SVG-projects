@@ -1,1 +1,57 @@
-Adding CSS file
+/* Adding CSS file */
+
+body {
+  background: #444;
+}
+
+svg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.circle {
+  fill: none;
+  stroke-width: 5px;
+  stroke: #fafafa;
+  animation: 4s background-outline forwards;
+  animation: 4s text-outline forwards;
+}
+
+svg path {
+  fill: none;
+  stroke: #fafafa;
+  stroke-width: 3px;
+  animation: 4s text-outline forwards;
+}
+
+#background {
+  stroke-dasharray: 800;
+  stroke-dashoffset: 800;
+}
+#title {
+  stroke-dasharray: 800;
+  stroke-dashoffset: 800;
+}
+
+@keyframes background-outline {
+  from {
+    stroke-dash0ffset: 800;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes text-outline {
+  from {
+    stroke-dashoffset: 800;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
